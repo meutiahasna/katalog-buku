@@ -22,6 +22,22 @@ textarea {
   font-family: inherit;
 }
 
+:root {
+  color-scheme: light only;
+}
+
+h1, h2, h3, h4, label {
+  color: #0f172a;
+}
+
+input,
+select,
+textarea {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+
+
 /* =========================================================
    LAYOUT UTAMA, BINGKAI KOTAK & FOOTER BIRU TUA
    ========================================================= */
