@@ -9,6 +9,7 @@
 }
 
 body {
+  color-scheme: light;
   background-color: #ffffff;
   color: #1e293b;
   line-height: 1.6;
@@ -170,9 +171,16 @@ footer,
   padding: 0.42rem 1rem;
   border: 1px solid #cbd5e1;
   background-color: #ffffff;
+  color: #1e293b;
   font-size: 0.875rem;
   line-height: 1.5;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.select-input option,
+.form-group select option {
+  background-color: #ffffff;
+  color: #1e293b;
 }
 
 .search-input {
@@ -198,6 +206,8 @@ footer,
   border-radius: 14px;
   padding: 0.65rem 1rem;
   border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #1e293b;
   font-size: 0.875rem;
   line-height: 1.5;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -480,11 +490,28 @@ button,
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 2.5rem 1.25rem;
+  padding: 1.75rem 1.25rem; /* Padding diperkecil agar lebih ramping di HP */
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
+  color: #475569; /* Warna teks abu-abu gelap yang jelas */
+  font-size: 0.875rem; /* Ukuran teks lebih kecil & proporsional (14px) */
+  line-height: 1.5;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+.feedback-box h3 {
+  font-size: 1rem;
+  color: #1e293b;
+  margin-bottom: 0.35rem;
+}
+
+.feedback-box p {
+  font-size: 0.875rem;
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto;
+  text-wrap: balance;
 }
 
 .feedback-box.error {
@@ -494,8 +521,8 @@ button,
 }
 
 .feedback-icon {
-  font-size: 2.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.75rem; /* Ikon diperkecil sedikit agar serasi dengan teks */
+  margin-bottom: 0.4rem;
 }
 
 .spinner {
@@ -624,8 +651,10 @@ margin-bottom: 2.25rem;
 }
 .form-section h2,
 .collection-section h2 {
-font-size: 1.25rem;
-margin-bottom: 1rem;
+  color: #0f172a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 .alert-success {
 background-color: #dcfce7;
